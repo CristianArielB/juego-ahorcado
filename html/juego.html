@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Ahorcado</title>
+</head>
+<body>
+    <h1>Juego del ahorcado</h1>
+    <p>Descubre la palabra secreta</p>
+    <div class="contenedor">
+        <svg height="250" width="200" class="dibujo">
+            <!-- Horca -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+
+            <!-- Cabeza -->
+            <circle cx="140" cy="70" r="20" class="parte-dibujo" />
+            <!-- Cuerpo -->
+            <line x1="140" y1="90" x2="140" y2="150" class="parte-dibujo" />
+            <!-- Brazo -->
+            <line x1="140" y1="120" x2="120" y2="100" class="parte-dibujo" />
+            <line x1="140" y1="120" x2="160" y2="100" class="parte-dibujo" />
+            <!-- Piernas -->
+            <line x1="140" y1="150" x2="120" y2="180" class="parte-dibujo" />
+            <line x1="140" y1="150" x2="160" y2="180" class="parte-dibujo" />
+        </svg>
+
+        <div class="contenedor-letras">
+            <div id="letras-incorrectas"></div>
+        </div>
+        <div class="palabra" id="palabra"></div>
+    </div>
+
+    <!-- Mensaje de fin de juego -->
+    <div class="contenedor-popup" id="contenedor-popup">
+        <div class="popup">
+            <h2 id="mensaje-final"></h2>
+            <button id="boton-jugar">Volver a jugar</button>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

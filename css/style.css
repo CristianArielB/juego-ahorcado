@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4f345a;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.contenedor {
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+}
+
+.dibujo {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 4px;
+    stroke-linecap: round;
+}
+
+.parte-dibujo {
+    display: none;
+}
+
+.contenedor-letras {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.contenedor-letras p{
+    margin: 0 0 5px;
+}
+
+.contenedor-letras span{
+    font-size: 24px;
+}
+
+.palabra {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letra {
+    border-bottom: 3px solid #2980b9;
+    display: inline-flex;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.contenedor-popup {
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: #2980b9;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.popup button{
+    cursor: pointer;
+    background-color: #fff;
+    color: #2980b9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.popup button:active {
+    transform: scale(0.98);
+}
+
+.popup button:focus {
+    outline: 0;
+}
+
+/*index*/
+.boton {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4f345a;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.boton:hover {
+    background: gray;
+}
+
+/*palabra-nueva.html*/
+.text-area{
+    outline: none;
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    -webkit-box-shadow: 1px 2px 5px 1px #24242457;
+    box-shadow: 1px 2px 5px 1px #24242452;
+}
+
+.nota {
+    font-size: 14px;
+}
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guardar-palabra {
+    cursor: pointer;
+    text-align: center;
+    background-size: 200% auto;
+    background-color: white;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #4f345a;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 14px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 5px;
+  }
+
+.guardar-palabra:hover {
+    background: gray;
+}
